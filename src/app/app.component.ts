@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Event } from './models/event.model';
+import { Show } from './models/event.model';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,7 @@ import { Event } from './models/event.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  masterShowList: Show[] = [
+    new Show(8.16, 'Nirvana', 'Screaming Trees', '8pm', 15),
+  ];
 }

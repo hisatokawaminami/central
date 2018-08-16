@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Event } from '../models/event.model';
-
+import { Show } from '../models/event.model';
 @Component({
   selector: 'app-show-add',
   templateUrl: './show-add.component.html',

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Event } from '../models/event.model';
-
+import { Show } from '../models/event.model';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
