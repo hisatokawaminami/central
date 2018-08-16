@@ -39,9 +39,10 @@
     text-decoration: none;
     text-transform: uppercase;
 }
-body {
-    background-image: url("logo.png");
+
+/*body {
+    background-image: url(background.jpg);
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
-}
+}*/
