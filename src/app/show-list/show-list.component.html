@@ -1,4 +1,6 @@
 
 <ul>
-  <li *ngFor="let show of childShowList">{{show.date}} {{show.headliner}} || with: {{show.opener}} || {{show.showTime}} || ${{show.tixPrice}} <button (click)="editShow(show)">Edit</button></li>
+  <p *ngFor="let show of childShowList">{{show.date}} {{show.headliner}} || with: {{show.opener}} || {{show.showTime}} || ${{show.tixPrice}} <button (click)="editShow(show)">Edit</button></p>
 </ul>
+<br>
+<button (click)="addShow()">Add Shows</button>

@@ -1,5 +1,7 @@
-<p>Add New Show</p>
+<div *ngIf="addNewShow">
+<p>Add New Shows</p>
 <div class="">
+
   <label>Date: </label>
   <input #newDate><br>
   <label>Headliner: </label>
@@ -12,3 +14,5 @@
   <input #newTixPrice><br>
 </div>
 <button (click)="submitForm(newDate.value, newHeadliner.value, newOpener.value, newShowTime.value, newTixPrice.value); newDate.value=''; newHeadliner.value=''; newOpener.value=''; newShowTime.value=''; newTixPrice.value='';">Save</button>
+</div><button (click)="finishedAdding()">Done</button>
+  

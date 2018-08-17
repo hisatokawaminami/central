@@ -13,7 +13,7 @@ export class AppComponent {
   ]
 
   selectedShow = null;
-
+  addNewShow = null;
   editShow(clickedShow) {
     this.selectedShow = clickedShow;
   }
@@ -22,5 +22,8 @@ export class AppComponent {
   }
   addShow(newShow: Show){
     this.masterShowList.push(newShow);
+  }
+  finishedAdding() {
+    this.addNewShow = null;
   }
 }
