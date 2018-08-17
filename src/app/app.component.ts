@@ -20,4 +20,7 @@ export class AppComponent {
   finishedEditing() {
     this.selectedShow = null
   }
+  addShow(newShow: Show){
+    this.masterShowList.push(newShow);
+  }
 }

@@ -3,3 +3,4 @@
 <app-nav></app-nav>
 <app-show-list [childShowList]="masterShowList" (clickSender)="editShow($event)"></app-show-list>
 <app-show-edit [childSelectedShow]="selectedShow" (clickedDone)="finishedEditing()"></app-show-edit>
+<app-show-add (sendShow)="addShow($event)"></app-show-add>
