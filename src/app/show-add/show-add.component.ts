@@ -13,7 +13,9 @@ export class ShowAddComponent implements OnInit {
     this.sendShow.emit(newShow);
   }
   constructor() { }
+  showForm(){
 
+  }
   ngOnInit() {
   }
 
