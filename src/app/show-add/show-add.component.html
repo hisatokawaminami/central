@@ -1,4 +1,4 @@
-<div *ngIf="addNewShow">
+<div class="addShowForm">
 <p>Add New Shows</p>
 <div class="">
 
@@ -14,5 +14,5 @@
   <input #newTixPrice><br>
 </div>
 <button (click)="submitForm(newDate.value, newHeadliner.value, newOpener.value, newShowTime.value, newTixPrice.value); newDate.value=''; newHeadliner.value=''; newOpener.value=''; newShowTime.value=''; newTixPrice.value='';">Save</button>
-</div><button (click)="finishedAdding()">Done</button>
-  
+</div>
+<!-- <button (click)="finishedAdding()">Done</button> -->
