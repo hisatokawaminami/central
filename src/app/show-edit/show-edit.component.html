@@ -1,3 +1,18 @@
-<p>
-  show-edit works!
-</p>
+<div *ngIf="childSelectedShow">
+<h3>{{childSelectedShow.headliner}}</h3>
+
+<h3>Edit Show</h3>
+<label>Date</label>
+<input [(ngModel)]="childSelectedShow.date"><br>
+<label>Headliner</label>
+<input [(ngModel)]="childSelectedShow.headliner"><br>
+<label>Opener</label>
+<input [(ngModel)]="childSelectedShow.opener"><br>
+<label>Time</label>
+<input [(ngModel)]="childSelectedShow.showTime"><br>
+<label>Ticket Price</label>
+<input [(ngModel)]="childSelectedShow.tixPrice">
+
+<button (click)="finishedEditing()">Done</button>
+
+</div>
