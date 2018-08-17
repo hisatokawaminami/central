@@ -1,6 +1,32 @@
-# Central
+# Central Saloon
+
+#### Angular Project, 8/17/2018
+
+### By Hisato Kawaminami
+
+## Description
+
+This is a web app rebuild of Central Saloon(centralsaloon.com) using Angular.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+
+
+## Installation
+Clone from:https://github.com/hisatokawaminami/central.git
+
+##Specifications
+-A user can create, edit, delete event information  
+
+## Technologies Used
+
+* _Javascript_
+* _TypeScript_
+* _Node JS_
+* _Angular_
+* _Bootstrap_
+* _CSS_
+* _Firebase_
+* _API_
 
 ## Development server
 
