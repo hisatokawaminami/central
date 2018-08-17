@@ -1,6 +1,17 @@
 
 <app-nav></app-nav>
 <app-show-list></app-show-list>
+
 <ul>
-  <li *ngFor="let show of shows">{{show.headliner}}<button (click)="editShow()">Edit</button></li>
+  <li *ngFor="let show of shows">{{show.headliner}}<button (click)="editShow(show)">Edit</button></li>
 </ul>
+
+<div *ngIf="selectedShow">
+<h3>{{selectedShow.headliner}}</h3>
+
+<h3>Edit Show</h3>
+<label>Headliner</label>
+<input [(ngModel)]="selectedShow.headliner">
+<button (click)="finishedEditing()">Done</button>
+
+</div>

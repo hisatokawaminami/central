@@ -12,9 +12,12 @@ export class AppComponent {
     new Show('Wild Arms', 'Hillside', '9pm', 7),
   ]
 
-selectedShow: Show = this.shows[0];
+  selectedShow = null;
 
-editShow() {
-  alert("time to edit")
-}
+  editShow(clickedShow) {
+    this.selectedShow = clickedShow;
+  }
+  finishedEditing() {
+    this.selectedShow = null
+  }
 }
