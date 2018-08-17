@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Show } from '../models/show.model';
 @Component({
   selector: 'app-show-list',
@@ -7,6 +7,7 @@ import { Show } from '../models/show.model';
 })
 export class ShowListComponent implements OnInit {
   @Input() childShowList: Show[];
+  @Output() clickSender = new EventEmitter();
 
 
 
