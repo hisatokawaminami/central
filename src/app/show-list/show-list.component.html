@@ -1,4 +1,4 @@
 
 <ul>
-  <li *ngFor="let show of shows">{{show.headliner}}<button (click)="editShow(show)">Edit</button></li>
+  <li *ngFor="let show of childShowList">{{show.headliner}}<button (click)="editShow(show)">Edit</button></li>
 </ul>
