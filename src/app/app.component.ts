@@ -7,7 +7,10 @@ import { Show } from './models/event.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  masterShowList: Show[] = [
-    new Show(8.16, 'Nirvana', 'Screaming Trees', '8pm', 15),
-  ];
+  firstShow = {
+  headliner: "Nirvana"
+}
+  // masterShowList: Show[] = [
+  //   new Show(8.16, 'Nirvana', 'Screaming Trees', '8pm', 15),
+  // ];
 }
