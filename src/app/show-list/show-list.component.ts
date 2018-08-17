@@ -7,9 +7,12 @@ import { Show } from '../models/show.model';
 })
 export class ShowListComponent implements OnInit {
 
-  // @Input() childShowList: Show[];
+  constructor() { }
 
   ngOnInit() {
   }
-
+  shows: Show[] = [
+    new Show('Nirvana', 'Screaming Trees', '8pm', 15),
+    new Show('Wild Arms', 'Hillside', '9pm', 7),
+  ]
 }

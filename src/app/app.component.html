@@ -1,10 +1,9 @@
+<!-- <img src="assets/img/background.jpg"> -->
 
 <app-nav></app-nav>
 <app-show-list></app-show-list>
 
-<ul>
-  <li *ngFor="let show of shows">{{show.headliner}}<button (click)="editShow(show)">Edit</button></li>
-</ul>
+
 
 <div *ngIf="selectedShow">
 <h3>{{selectedShow.headliner}}</h3>

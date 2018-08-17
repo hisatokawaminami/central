@@ -1,2 +1,4 @@
-<p *ngFor="let show of shows">{{show.headliner}}{{show.opener}}</p>
-<p>test</p>
+
+<ul>
+  <li *ngFor="let show of shows">{{show.headliner}}<button (click)="editShow(show)">Edit</button></li>
+</ul>
