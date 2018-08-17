@@ -7,7 +7,7 @@ import { Show } from './models/show.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  masterShows: Show[] = [
+  masterShowList: Show[] = [
     new Show('Nirvana', 'Screaming Trees', '8pm', 15),
     new Show('Wild Arms', 'Hillside', '9pm', 7),
   ]
