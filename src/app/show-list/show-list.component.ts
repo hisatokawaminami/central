@@ -9,7 +9,9 @@ export class ShowListComponent implements OnInit {
   @Input() childShowList: Show[];
   @Output() clickSender = new EventEmitter();
 
-
+editShow(showToEdit: Show) {
+  this.clickSender.emit(showToEdit);
+}
 
   ngOnInit() {
   }

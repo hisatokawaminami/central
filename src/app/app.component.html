@@ -1,7 +1,7 @@
 <!-- <img src="assets/img/background.jpg"> -->
 
 <app-nav></app-nav>
-<app-show-list [childShowList]="masterShowList"></app-show-list>
+<app-show-list [childShowList]="masterShowList" (clickSender)="editShow($event)"></app-show-list>
 
 
 
