@@ -12,6 +12,8 @@ export class AppComponent {
     new Show('Wild Arms', 'Hillside', '9pm', 7),
   ]
 
+selectedShow: Show = this.shows[0];
+
 editShow() {
   alert("time to edit")
 }
