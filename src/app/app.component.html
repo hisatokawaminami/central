@@ -1,3 +1,6 @@
 
 <app-nav></app-nav>
 <app-show-list></app-show-list>
+<ul>
+  <li *ngFor="let show of shows">{{show.headliner}}<button (click)="editShow()">Edit</button></li>
+</ul>

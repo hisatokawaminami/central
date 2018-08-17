@@ -7,7 +7,7 @@ import { Show } from '../models/show.model';
 })
 export class ShowListComponent implements OnInit {
 
-  constructor() { }
+  // @Input() childShowList: Show[];
 
   ngOnInit() {
   }

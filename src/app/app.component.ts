@@ -9,5 +9,10 @@ import { Show } from './models/show.model';
 export class AppComponent {
   shows: Show[] = [
     new Show('Nirvana', 'Screaming Trees', '8pm', 15),
+    new Show('Wild Arms', 'Hillside', '9pm', 7),
   ]
+
+editShow() {
+  alert("time to edit")
+}
 }
