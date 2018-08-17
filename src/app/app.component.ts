@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Show } from './models/event.model';
+import { Show } from './models/show.model';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +8,6 @@ import { Show } from './models/event.model';
 })
 export class AppComponent {
   shows: Show[] = [
-    new Show(8.16, 'Nirvana', 'Screaming Trees', '8pm', 15),
-  ];
+    new Show('Nirvana', 'Screaming Trees', '8pm', 15),
+  ]
 }

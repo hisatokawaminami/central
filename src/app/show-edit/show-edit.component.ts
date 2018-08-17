@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Show } from '../models/event.model';
+import { Show } from '../models/show.model';
 @Component({
   selector: 'app-show-edit',
   templateUrl: './show-edit.component.html',
