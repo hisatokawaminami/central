@@ -8,4 +8,6 @@ const appRoutes: Routes = [
     path: '',
     component: ShowListComponent
   }
-]
+];
+
+export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

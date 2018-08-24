@@ -1,9 +1,30 @@
 <!-- <img src="assets/img/background.jpg"> -->
+<div class="title">
+  <br><br><br><br><br><br><br>
+  <h2>HOME OF THE</h2>
+  <h1>{{title}}</h1>
+  <h3>SEATTLE'S BEST NEW MUSIC IN ITS OLDEST SALOON</h3><br><br>
+</div>
+<app-nav></app-nav>
+
 <body>
 
+  <div class="showlistbox">
+
+  <p class="upcomming"><span>UPCOMING EVENTS</span> </p>
+
+  <app-show-list [childShowList]="masterShowList" (clickSender)="editShow($event)"></app-show-list>
+</div>
+
 </body>
-<app-nav></app-nav>
-<app-show-list [childShowList]="masterShowList" (clickSender)="editShow($event)"></app-show-list>
+
 <app-show-edit [childSelectedShow]="selectedShow" (clickedDone)="finishedEditing()"></app-show-edit>
 <app-show-add (sendShow)="addShow($event)"></app-show-add>
- 
+
+<footer>THE CENTRAL SALOON
+
+207 1ST AVE SOUTH SEATTLE, WA
+
+(206) 622-0209
+
+OPEN 11AM-2AM DAILY</footer>

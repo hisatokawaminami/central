@@ -8,7 +8,8 @@ import { NavComponent } from './nav/nav.component';
 import { ShowListComponent } from './show-list/show-list.component';
 import { ShowEditComponent } from './show-edit/show-edit.component';
 import { ShowAddComponent } from './show-add/show-add.component';
-
+import { routing } from './app.routing';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,13 @@ import { ShowAddComponent } from './show-add/show-add.component';
     NavComponent,
     ShowListComponent,
     ShowEditComponent,
-    ShowAddComponent
+    ShowAddComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

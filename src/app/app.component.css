@@ -1,1 +1,28 @@
-
+h1 {
+  color: white;
+  font-size: 75px;
+  font-family: 'Kapraneue webfont',sans-serif;
+      line-height: 70px;
+      font-weight: 600;
+}
+h2 {
+  color: white;
+  font-size: 45px;
+  font-family: 'Kapraneue webfont',sans-serif;
+    line-height: 70px;
+    font-weight: 600;
+}
+h3 {
+  color: white;
+  font-size: 20px;
+}
+p {
+  color: white;
+}
+.showlistbox{
+  background-color: #f4e9cf;
+}
+footer {
+  color: white;
+  background-color: #368163;;
+}
