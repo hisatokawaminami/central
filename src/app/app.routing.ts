@@ -7,11 +7,12 @@ import { ContactComponent } from './contact/contact.component';
 import { EventsComponent } from './events/events.component';
 import { HistoryComponent } from './history/history.component';
 import { MenuComponent } from './menu/menu.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
   {
     path: '',
-    component: ShowListComponent
+    component: HomeComponent
   },
   {
     path: 'admin',
