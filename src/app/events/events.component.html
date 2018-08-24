@@ -1,3 +1,10 @@
 <p>
-  events works!
-</p>
+Live music by hot bands regularly heat up The Central. When you’re open every day of the year, people expect a lot of great sound. That's our tradition.</p>
+
+
+<div class="showlistbox">
+
+<p class="upcomming"><span>UPCOMING EVENTS</span> </p>
+
+<app-show-list [childShowList]="masterShowList" (clickSender)="editShow($event)"></app-show-list>
+</div>

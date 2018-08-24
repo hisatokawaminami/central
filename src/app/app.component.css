@@ -25,5 +25,8 @@ p {
 footer {
   color: white;
   background-color: #368163;
-  position: sticky;
+
+ position: sticky;
+ height: 3em;
+ width:100%;
 }
