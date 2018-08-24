@@ -11,6 +11,10 @@ import { ShowAddComponent } from './show-add/show-add.component';
 import { routing } from './app.routing';
 import { FooterComponent } from './footer/footer.component';
 import { AdminComponent } from './admin/admin.component';
+import { EventsComponent } from './events/events.component';
+import { HistoryComponent } from './history/history.component';
+import { MenuComponent } from './menu/menu.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { AdminComponent } from './admin/admin.component';
     ShowEditComponent,
     ShowAddComponent,
     FooterComponent,
-    AdminComponent
+    AdminComponent,
+    EventsComponent,
+    HistoryComponent,
+    MenuComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

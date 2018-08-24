@@ -21,13 +21,10 @@
 <app-show-edit [childSelectedShow]="selectedShow" (clickedDone)="finishedEditing()"></app-show-edit>
 <app-show-add (sendShow)="addShow($event)"></app-show-add>
 
-<footer>THE CENTRAL SALOON &diams;
-
+<footer class="footer">THE CENTRAL SALOON &diams;
 207 1ST AVE SOUTH SEATTLE, WA &diams;
-
 (206) 622-0209 &diams;
+OPEN 11AM-2AM DAILY <br>
+<a class="text-muted" routerLink="admin">Admin</a>
 
-OPEN 11AM-2AM DAILY</footer>
-<div class="container">
-    <a class="text-muted" routerLink="admin">Admin</a>
-  </div>
+</footer>
