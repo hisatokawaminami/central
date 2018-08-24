@@ -32,7 +32,8 @@ import { ShowDetailComponent } from './show-detail/show-detail.component';
     MenuComponent,
     ContactComponent,
     HomeComponent,
-    ShowDetailComponent
+    ShowDetailComponent,
+    
   ],
   imports: [
     BrowserModule,
