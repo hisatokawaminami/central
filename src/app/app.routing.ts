@@ -8,6 +8,7 @@ import { EventsComponent } from './events/events.component';
 import { HistoryComponent } from './history/history.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
+import { ShowDetailComponent } from './show-detail/show-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -33,6 +34,10 @@ const appRoutes: Routes = [
   {
     path: 'menu',
     component: MenuComponent
+  },
+  {
+    path: 'shows/:tixPrice',
+    component: ShowDetailComponent
   }
 ];
 

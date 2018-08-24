@@ -12,7 +12,7 @@ Live music by hot bands regularly heat up The Central. When you’re open every 
 <p class="upcomming"><span>UPCOMING EVENTS</span> </p>
 
 
-<div *ngFor="let show of shows" class="panel panel-default">
+<div *ngFor="let show of shows" (click)="goToDetailPage(show)" class="panel panel-default">
   <div class="panel-body">
 
     <h3><em>{{show.headliner}}</em> on {{show.date}}</h3>

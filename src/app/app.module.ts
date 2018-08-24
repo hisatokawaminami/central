@@ -16,6 +16,7 @@ import { HistoryComponent } from './history/history.component';
 import { MenuComponent } from './menu/menu.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { ShowDetailComponent } from './show-detail/show-detail.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HomeComponent } from './home/home.component';
     HistoryComponent,
     MenuComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    ShowDetailComponent
   ],
   imports: [
     BrowserModule,
