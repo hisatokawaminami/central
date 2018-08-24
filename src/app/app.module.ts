@@ -10,6 +10,7 @@ import { ShowEditComponent } from './show-edit/show-edit.component';
 import { ShowAddComponent } from './show-add/show-add.component';
 import { routing } from './app.routing';
 import { FooterComponent } from './footer/footer.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     ShowListComponent,
     ShowEditComponent,
     ShowAddComponent,
-    FooterComponent
+    FooterComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
