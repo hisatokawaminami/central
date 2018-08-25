@@ -9,4 +9,12 @@ export class ShowService {
   getShows() {
     return SHOWS;
   }
+
+  getShowById(showId: number){
+   for (var i = 0; i <= SHOWS.length - 1; i++) {
+     if (SHOWS[i].tixPrice === showId) {
+       return SHOWS[i];
+     }
+   }
+ }
 }
