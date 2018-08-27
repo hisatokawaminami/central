@@ -3,6 +3,8 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Show } from '../models/show.model';
 import { ShowService } from '../show.service';
+import { FirebaseListObservable } from 'angularfire2/database';
+
 @Component({
   selector: 'app-show-detail',
   templateUrl: './show-detail.component.html',
@@ -10,8 +12,8 @@ import { ShowService } from '../show.service';
   providers: [ShowService]
 })
 export class ShowDetailComponent implements OnInit {
-  showId: number;
-  showToDisplay: Show;
+  showId: string;
+  showToDisplay;
 
   constructor(
     private route: ActivatedRoute,
@@ -21,9 +23,9 @@ export class ShowDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.showId = parseInt(urlParameters['tixPrice']);
+      this.showId = urlParameters['tixPrice'];
     });
-    // this.showToDisplay = this.showService.getShowById(this.showId);
+    this.showToDisplay = this.showService.getShowById(this.showId);
   }
 
 }

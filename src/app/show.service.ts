@@ -15,10 +15,12 @@ export class ShowService {
   }
   addShow(newShow: Show) {
     this.shows.push(newShow);
-    
+
   }
-  getShowById(showId: number)
+  getShowById(showId: string)
   {
+    return this.database.object('shows/' + showId);
+
   //  for (var i = 0; i <= SHOWS.length - 1; i++) {
   //    if (SHOWS[i].tixPrice === showId) {
   //      return SHOWS[i];

@@ -18,6 +18,6 @@ export class EventsComponent implements OnInit {
     this.shows = this.showService.getShows();
   }
   goToDetailPage(clickedShow: Show) {
-    this.router.navigate(['shows', clickedShow.tixPrice]);
+    this.router.navigate(['shows', clickedShow.$key]);
   };
 }

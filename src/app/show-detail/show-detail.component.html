@@ -1,9 +1,9 @@
 
   <h2>This album has id number: {{showId}}</h2>
   <div>
-    <h3>{{showToDisplay.date}}</h3>
-    <h4>{{showToDisplay.headliner}}</h4>
-    <p>{{showToDisplay.opener}}</p>
-    <p>{{showToDisplay.showTime}}</p>
-    <p>${{showToDisplay.tixPrice}}</p>
+    <h3>{{(showToDisplay | async)?.date}}</h3>
+    <h4>{{(showToDisplay | async)?.headliner}}</h4>
+    <p>{{(showToDisplay | async)?.opener}}</p>
+    <p>{{(showToDisplay | async)?.shoTime}}</p>
+    <p>{{(showToDisplay | async)?.tixPrice}}</p>
   </div>
