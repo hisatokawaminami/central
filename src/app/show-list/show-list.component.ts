@@ -22,7 +22,7 @@ editShow(showToEdit: Show) {
 }
 
   ngOnInit() {
-    this.shows = this.showService.getShows();
+    // this.shows = this.showService.getShows();
   }
 
 }

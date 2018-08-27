@@ -1,20 +1,28 @@
 import { Injectable } from '@angular/core';
 import { Show } from './models/show.model';
 import { SHOWS } from './mock';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
 export class ShowService {
+  shows: FirebaseListObservable<any[]>;
 
-  constructor() { }
-  getShows() {
-    return SHOWS;
+  constructor(private database: AngularFireDatabase) {
+  this.shows = database.list('shows');
   }
-
-  getShowById(showId: number){
-   for (var i = 0; i <= SHOWS.length - 1; i++) {
-     if (SHOWS[i].tixPrice === showId) {
-       return SHOWS[i];
-     }
-   }
+  getShows() {
+    return this.shows;
+  }
+  addShow(newShow: Show) {
+    this.shows.push(newShow);
+    
+  }
+  getShowById(showId: number)
+  {
+  //  for (var i = 0; i <= SHOWS.length - 1; i++) {
+  //    if (SHOWS[i].tixPrice === showId) {
+  //      return SHOWS[i];
+  //    }
+  //  }
  }
 }

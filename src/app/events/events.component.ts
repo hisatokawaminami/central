@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Show } from '../models/show.model';
 import { ShowService } from '../show.service';
+import { FirebaseListObservable } from 'angularfire2/database';
+
 @Component({
   selector: 'app-events',
   templateUrl: './events.component.html',
@@ -9,7 +11,7 @@ import { ShowService } from '../show.service';
   providers: [ShowService]
 })
 export class EventsComponent implements OnInit {
-  shows: Show[];
+  shows: FirebaseListObservable<any[]>;
   constructor(private router: Router, private showService: ShowService) { }
 
   ngOnInit() {

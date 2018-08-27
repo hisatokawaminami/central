@@ -23,7 +23,7 @@ export class ShowDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.showId = parseInt(urlParameters['tixPrice']);
     });
-    this.showToDisplay = this.showService.getShowById(this.showId);
+    // this.showToDisplay = this.showService.getShowById(this.showId);
   }
 
 }
