@@ -1,4 +1,4 @@
-<div *ngIf="childSelectedShow">
+<!-- <div *ngIf="childSelectedShow">
 <h3>{{childSelectedShow.headliner}}</h3>
 
 <h3>Edit Show</h3>
@@ -15,4 +15,26 @@
 
 <button (click)="finishedEditing()">Done</button>
 
-</div>
+</div> -->
+<h4>Edit Show</h4>
+
+<label>New Date:</label>
+<input [(ngModel)]="selectedShow.date">
+<br>
+
+<label>New Headliner:</label>
+<input [(ngModel)]="selectedShow.headliner">
+<br>
+
+<label>New Opener:</label>
+<input [(ngModel)]="selectedShow.opener">
+<br>
+
+<label>New Show Time:</label>
+<input [(ngModel)]="selectedShow.showTime">
+<br>
+
+<label>New Ticket Price:</label>
+<input [(ngModel)]="selectedShow.tixPrice">
+
+<button (click)="beginUpdatingShow(selectedShow)">Update</button>

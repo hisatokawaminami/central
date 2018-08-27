@@ -12,6 +12,8 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class EventsComponent implements OnInit {
   shows: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
+
   constructor(private router: Router, private showService: ShowService) { }
 
   ngOnInit() {

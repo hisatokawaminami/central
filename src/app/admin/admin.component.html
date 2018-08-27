@@ -1,18 +1,30 @@
-<p>ADMIN Add New Shows</p>
-<div class="">
 
-  <label>Date: </label>
-  <input #newDate><br>
-  <label>Headliner: </label>
-  <input #newHeadliner><br>
-  <label>Opener: </label>
-  <input #newOpener><br>
-  <label>Time: </label>
-  <input #newShowTime><br>
-  <label>Price: </label>
-  <input #newTixPrice><br>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Album to Inventory</h3>
+  </div>
+  <div class="panel-body">
+    <div><p>ADMIN Add New Shows</p>
+      <div class="">
+
+        <label>Date: </label>
+        <input #newDate><br>
+        <label>Headliner: </label>
+        <input #newHeadliner><br>
+        <label>Opener: </label>
+        <input #newOpener><br>
+        <label>Time: </label>
+        <input #newShowTime><br>
+        <label>Price: </label>
+        <input #newTixPrice><br>
+      </div>
+      <div class="">
+
+        <button (click)="submitForm(newDate.value, newHeadliner.value, newOpener.value, newShowTime.value, newTixPrice.value); newDate.value=''; newHeadliner.value=''; newOpener.value=''; newShowTime.value=''; newTixPrice.value='';">Save</button>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="">
-
-<button (click)="submitForm(newDate.value, newHeadliner.value, newOpener.value, newShowTime.value, newTixPrice.value); newDate.value=''; newHeadliner.value=''; newOpener.value=''; newShowTime.value=''; newTixPrice.value='';">Save</button>
+<div>
+  <app-events></app-events>
 </div>

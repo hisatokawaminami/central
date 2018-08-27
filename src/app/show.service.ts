@@ -17,9 +17,8 @@ export class ShowService {
     this.shows.push(newShow);
 
   }
-  getShowById(showId: string)
-  {
-    return this.database.object('shows/' + showId);
+  getShowById(showId: string){
+    return this.database.object('/shows/' + showId);
 
   //  for (var i = 0; i <= SHOWS.length - 1; i++) {
   //    if (SHOWS[i].tixPrice === showId) {
@@ -27,4 +26,10 @@ export class ShowService {
   //    }
   //  }
  }
+
+ updateShow(localUpdatedShow) {
+   var showEntryInFirebase = this.getShowById(localUpdatedShow.$key);
+   showEntryInFirebase.update({date: localUpdatedShow.date, headliner: localUpdatedShow.headliner, opener: localUpdatedShow.opener, showTime: localUpdatedShow.showTime, tixPrice: localUpdatedShow.tixPrice});
+ }
+
 }
