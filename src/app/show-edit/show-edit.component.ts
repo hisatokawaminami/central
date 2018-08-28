@@ -23,4 +23,10 @@ export class ShowEditComponent implements OnInit {
   beginUpdatingShow(showToUpdate){
     this.showService.updateShow(showToUpdate);
   }
+
+  beginDeletingShow(showToDelete){
+    if (confirm("Are you sure you want to delete this?")){
+      this.showService.deleteShow(showToDelete);
+    }
+  }
 }

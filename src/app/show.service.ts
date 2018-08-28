@@ -32,4 +32,8 @@ export class ShowService {
    showEntryInFirebase.update({date: localUpdatedShow.date, headliner: localUpdatedShow.headliner, opener: localUpdatedShow.opener, showTime: localUpdatedShow.showTime, tixPrice: localUpdatedShow.tixPrice});
  }
 
+ deleteShow(localShowToDelete){
+   var showEntryInFirebase = this.getShowById(localShowToDelete.$key);
+   showEntryInFirebase.remove();
+ }
 }

@@ -19,7 +19,8 @@ export class EventsComponent implements OnInit {
   ngOnInit() {
     this.shows = this.showService.getShows();
   }
+
   goToDetailPage(clickedShow: Show) {
     this.router.navigate(['shows', clickedShow.$key]);
-  };
+  }
 }

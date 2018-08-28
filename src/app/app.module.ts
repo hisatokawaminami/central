@@ -20,6 +20,7 @@ import { ShowDetailComponent } from './show-detail/show-detail.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+// import { key } from "firebase-key";
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
