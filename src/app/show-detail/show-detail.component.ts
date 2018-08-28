@@ -25,7 +25,11 @@ export class ShowDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.showId = urlParameters['tixPrice'];
     });
-    this.showToDisplay = this.showService.getShowById(this.showId);
+    // this.showToDisplay = this.showService.getShowById(this.showId);
+    this.showService.getShowById(this.showId).subscribe(dataLastEmittedFromObserver => {
+      this.showToDisplay = dataLastEmittedFromObserver;
+      console.log(this.showToDisplay);
+    })
   }
 
 }
