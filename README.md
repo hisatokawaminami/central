@@ -13,7 +13,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Installation
 Clone from:https://github.com/hisatokawaminami/central.git
-
+or visit: https://central-a72ac.firebaseapp.com/
 ##Specifications
 -A user can create, edit, delete event information  
 
