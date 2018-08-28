@@ -21,6 +21,6 @@ export class EventsComponent implements OnInit {
   }
 
   goToDetailPage(clickedShow: Show) {
-    this.router.navigate(['shows', clickedShow.$key]);
+    // this.router.navigate(['shows', clickedShow.$key]);
   }
 }
