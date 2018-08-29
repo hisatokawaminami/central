@@ -20,6 +20,10 @@ import { ShowDetailComponent } from './show-detail/show-detail.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { HttpModule } from '@angular/http';
+import { GifFormComponent } from './gif-form/gif-form.component';
+import { GifListComponent } from './gif-list/gif-list.component';
+
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -43,14 +47,16 @@ export const firebaseConfig = {
     ContactComponent,
     HomeComponent,
     ShowDetailComponent,
-
+    GifFormComponent,
+    GifListComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,6 +9,7 @@ import { HistoryComponent } from './history/history.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { ShowDetailComponent } from './show-detail/show-detail.component';
+import { GifFormComponent } from './gif-form/gif-form.component';
 
 const appRoutes: Routes = [
   {

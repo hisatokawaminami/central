@@ -1,0 +1,14 @@
+<h1>Gif</h1>
+
+<form>
+  <div class="form-group">
+    <label for="headliner">Headliner</label>
+    <input type=headliner #headliner>
+  </div>
+
+  <button (click)="getGif(headliner.value)">Get Gif</button>
+</form>
+
+<div *ngIf="gifs">
+  <app-gif-list [childGifs]="gifs"></app-gif-list>
+</div>
