@@ -9,6 +9,8 @@
 
     <div><p>ADMIN Add New Shows</p>
       <div class="">
+        <label>Gif: </label>
+        <input #newGif>
 
         <label>Date: </label>
         <input #newDate><br>
@@ -23,7 +25,7 @@
       </div>
       <div class="">
 
-        <button (click)="submitForm(newDate.value, newHeadliner.value, newOpener.value, newShowTime.value, newTixPrice.value); newDate.value=''; newHeadliner.value=''; newOpener.value=''; newShowTime.value=''; newTixPrice.value='';">Save</button>
+        <button (click)="submitForm(newGif.value, newDate.value, newHeadliner.value, newOpener.value, newShowTime.value, newTixPrice.value); newDate.value=''; newHeadliner.value=''; newOpener.value=''; newShowTime.value=''; newTixPrice.value='';">Save</button>
       </div>
     </div>
   </div>

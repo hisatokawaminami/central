@@ -6,7 +6,6 @@
 <p>
 Live music by hot bands regularly heat up The Central. When you’re open every day of the year, people expect a lot of great sound. That's our tradition.</p>
 
-
 <div class="showlistbox">
 
 <p class="upcomming"><span>UPCOMING EVENTS</span> </p>
@@ -15,8 +14,14 @@ Live music by hot bands regularly heat up The Central. When you’re open every 
 <div *ngFor="let show of shows | async"  class="panel panel-default" >
   <div class="panel-body">
 
-  <h3 (click)="goToDetailPage(show)"><em>{{show.headliner}}</em> on {{show.date}}</h3>
+  <h3 (click)="goToDetailPage(show)">
+    <!-- <div class=""> -->
+      <img src ='https://media2.giphy.com/media/mCRJDo24UvJMA/giphy.gif'/>
+    <!-- </div> -->
+  <img src ={{show.gif}}/>
+    <em>{{show.headliner}}</em> on {{show.date}}</h3>
     <div *ngIf="currentRoute === '/admin'">
+
       {{show.opener}}<br>
       {{show.showTime}}<br>
       ${{show.tixPrice}}<br>

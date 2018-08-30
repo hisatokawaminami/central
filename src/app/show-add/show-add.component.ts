@@ -8,8 +8,8 @@ import { Show } from '../models/show.model';
 export class ShowAddComponent implements OnInit {
   @Output() sendShow = new EventEmitter();
 
-  submitForm(date: string, headliner: string, opener: string, showTime: string, tixPrice: number){
-    let newShow: Show = new Show(date, headliner, opener, showTime, tixPrice);
+  submitForm(gif: string, date: string, headliner: string, opener: string, showTime: string, tixPrice: number){
+    let newShow: Show = new Show(gif, date, headliner, opener, showTime, tixPrice);
     this.sendShow.emit(newShow);
   }
   constructor() { }

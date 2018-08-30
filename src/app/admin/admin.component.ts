@@ -15,8 +15,8 @@ export class AdminComponent implements OnInit {
 
   ngOnInit() {
   }
-submitForm(date: string, headliner: string, opener: string, showTime: string, tixPrice: number) {
-  var newShow: Show = new Show (date, headliner, opener, showTime, tixPrice);
+submitForm(gif: string, date: string, headliner: string, opener: string, showTime: string, tixPrice: number) {
+  var newShow: Show = new Show (gif, date, headliner, opener, showTime, tixPrice);
   console.log(newShow);
   this.showService.addShow(newShow);
 }
