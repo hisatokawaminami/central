@@ -1,5 +1,5 @@
 <h1>GIF:</h1>
 
-<div *ngFor="let gif of childGifs.gifs;" class="gif">
-  <img src = {{gif.img_src}}/>
+<div *ngFor="let data of childData.data;" class="gif">
+  <img src = {{data.images.original.url}}/>
 </div>

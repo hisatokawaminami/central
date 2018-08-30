@@ -1,0 +1,10 @@
+img {
+  height: 200px;
+  width: 200px;
+  /*padding: 10px;*/
+  border: 10px solid green;
+}
+
+.gif {
+  object-fit: cover;
+}

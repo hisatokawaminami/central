@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-gif-list',
@@ -6,12 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./gif-list.component.css'],
   providers: [ ]
 })
-export class GifListComponent implements OnInit {
-  @Input() childGifs;
-
+export class GifListComponent {
+  @Input() childData;
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }

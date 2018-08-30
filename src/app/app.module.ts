@@ -51,12 +51,13 @@ export const firebaseConfig = {
     GifListComponent
   ],
   imports: [
+    HttpModule,
     BrowserModule,
     FormsModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule,
-    HttpModule
+    AngularFireDatabaseModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

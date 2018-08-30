@@ -3,12 +3,12 @@
 <form>
   <div class="form-group">
     <label for="headliner">Headliner</label>
-    <input type=headliner #headliner>
+    <input #headliner>
   </div>
 
-  <button (click)="getGif(headliner.value)">Get Gif</button>
+  <button (click)="getHeadlinerGifs(headliner.value)">Get Gif</button>
 </form>
 
-<div *ngIf="gifs">
-  <app-gif-list [childGifs]="gifs"></app-gif-list>
+<div *ngIf="data">
+  <app-gif-list [childData]="data"></app-gif-list>
 </div>

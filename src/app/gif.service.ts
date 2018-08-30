@@ -4,6 +4,7 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class GifService {
+  
   constructor(private http: Http) { }
 
 getGif(headliner: string) {
