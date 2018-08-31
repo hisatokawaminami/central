@@ -15,9 +15,7 @@ Live music by hot bands regularly heat up The Central. When you’re open every 
   <div class="panel-body">
 
   <h3 (click)="goToDetailPage(show)">
-    <!-- <div class=""> -->
-      <img src ='https://media2.giphy.com/media/mCRJDo24UvJMA/giphy.gif'/>
-    <!-- </div> -->
+
   <img src ={{show.gif}}/>
     <em>{{show.headliner}}</em> on {{show.date}}</h3>
     <div *ngIf="currentRoute === '/admin'">

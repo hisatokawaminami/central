@@ -7,7 +7,7 @@ import { Show } from './models/show.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'SEATTLE SOUND';
+  title = '';
   masterShowList: Show[] = [
 
   ]
